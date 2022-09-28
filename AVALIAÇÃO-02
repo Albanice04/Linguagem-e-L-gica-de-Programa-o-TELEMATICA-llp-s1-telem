@@ -1,0 +1,43 @@
+Resposta 1ª questão: O while verifica primeiro a condição, sendo verdadeira a condição executa a instrução presente dentro das chaves. No Do while é executado pelo
+menos uma vez as instruções contidas dentro da chave, o looping é executado pelo menos uma vez. Primeiro é executado toda a instrução e após executado a instrução
+presente dentro das chaves é verificado a condição se é verdadeira ou falsa
+
+
+
+Resposta 2º questão:
+
+#include <stdio.h>
+
+int main() {
+  int i;
+  
+  for (i = 0; i <= 10; i = i + 2) {
+    printf("%d\n", i);
+  }
+  
+  return 0;
+}
+
+
+
+
+
+
+Resposta 3ª questao:
+
+#include <stdio.h>
+
+int main() {
+  int i = 0;
+  
+  while (i < 10) {
+    if (i == 4) {
+      i++;
+      continue;
+    }
+    printf("%d\n", i);
+    i++;
+  } 
+  
+  return 0;
+}
