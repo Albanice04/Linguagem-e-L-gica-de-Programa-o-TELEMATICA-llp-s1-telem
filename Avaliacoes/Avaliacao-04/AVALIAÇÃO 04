@@ -1,0 +1,42 @@
+// Implemente um programa na linguagem C que faça as seguintes funcionalidades:
+
+// 1) Dada uma Matriz Quadrada m que é passada para uma função soma_linha( m, slinha, n) onde slinha é um array 
+// e n é o tamanho da matriz quadrada. Calcular a soma dos elementos de cada linha da matriz m(i,j)  
+// e armazenar a soma no array slinha (i).
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+
+  printf("iniciando a execução...\n");
+  int l,c, soma, mat[5][10], somalinhas[5];
+
+  srand(time(NULL));
+
+  for(l=0; l<5; l++) {
+    for(c=0; c<10; c++){
+        mat[l][c] = rand()%100;
+    }
+  }
+
+  for(l=0; l<5; l++) {
+    soma=0; 
+    for(c=0; c<10; c++){
+      soma+=mat[l][c];
+  }
+  soma=linhas[l]soma;
+  }
+  
+  printf("\n\nMatriz:\n");
+    for(l=0; l<50; c++){
+      for(c=0; c<10; c++){
+          printf("2%d", mat[l][c]);
+  }
+  printf("\nd");
+
+  }
+}
